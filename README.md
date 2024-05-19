@@ -18,6 +18,10 @@ To fully grasp the concepts presented here, some familiarity with the following 
 * **Basic Topology:** Concepts like topological spaces, continuous maps, and homeomorphisms.
 * **Group Theory:**  Basic understanding of groups, homomorphisms, and isomorphisms.
 
+## Spectral Sequences (higher-dimensions/serre_spectral_sequence.py)
+
+The `serre_spectral_sequence.py` script provides a highly simplified visualization of the Serre spectral sequence for the Hopf fibration, a way of breaking down the 2-sphere (S²) using a fibration with base space CP¹ and fibers S¹. The code uses dictionaries to represent the grid-like pages of the spectral sequence and symbolically simulates the differentials that refine the calculations on each page. Keep in mind that this is a conceptual illustration and does not capture the full complexity of spectral sequence computations, which involve intricate algebra and analysis of differentials. 
+
 ## Repository Structure
 
 * **visualizations/:**  Contains Python scripts for generating 3D visualizations of the sphere, torus, and Klein bottle.

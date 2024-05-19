@@ -1,0 +1,30 @@
+def display_page(page, page_number):
+    """Helper function to display a simplified spectral sequence page."""
+    print(f"Page {page_number}:")
+    for q in range(3, -1, -1):  # Iterate through rows (q) in reverse
+        for p in range(4):      # Iterate through columns (p)
+            entry = page.get((p, q), " ")  # Get entry or empty space
+            print(f"{entry:5}", end="")
+        print()  # Newline after each row
+    print("-" * 20)
+
+# Initialize the page 0 dictionary (simplified)
+page_0 = {
+    (0, 0): "ℤ", (1, 0): "0", (2, 0): "ℤ", (3, 0): "0",
+    (0, 1): "ℤ", (1, 1): "0", (2, 1): "ℤ", (3, 1): "0", 
+}
+
+display_page(page_0, 0) 
+
+# Symbolically represent the differentials and update to page 1
+# (In reality, differentials involve maps and computations)
+page_1 = page_0.copy()  # Make a copy
+page_1[(1, 0)] = " "  # Differential "kills" this entry (simplification)
+
+display_page(page_1, 1)
+
+# Page 2 (stabilizes to approximate S^3 cohomology)
+page_2 = page_1.copy()
+page_2[(0, 3)] = "ℤ"  # Introduce the Z in H^3 (simplification) 
+
+display_page(page_2, 2) 

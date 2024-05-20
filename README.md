@@ -22,9 +22,9 @@ To fully grasp the concepts presented here, some familiarity with the following 
 
 The `serre_spectral_sequence.py` script provides a highly simplified visualization of the Serre spectral sequence for the Hopf fibration, a way of breaking down the 2-sphere (S²) using a fibration with base space CP¹ and fibers S¹. The code uses dictionaries to represent the grid-like pages of the spectral sequence and symbolically simulates the differentials that refine the calculations on each page. Keep in mind that this is a conceptual illustration and does not capture the full complexity of spectral sequence computations, which involve intricate algebra and analysis of differentials. 
 
-## Grassmannians and Schubert Calculus (higher-dimensions/grassmannian_gr24.py)
+## Grassmannians and Schubert Calculus (higher-dimensions/gr24.py)
 
-The `grassmannian_gr24.py` script explores the cohomology ring of the Grassmannian Gr(2,4), the space of 2-dimensional planes in 4-dimensional space. The script uses the `networkx` library to create a simplified visualization of the ring structure, highlighting some key generators and their multiplication relations, which are determined by the intersection of Schubert cells. This visualization is a simplified representation, as the full cohomology ring is more complex and requires a deeper dive into Schubert calculus for complete understanding.
+The `gr24.py` script explores the cohomology ring of the Grassmannian Gr(2,4), the space of 2-dimensional planes in 4-dimensional space. The script uses the `networkx` library to create a simplified visualization of the ring structure, highlighting some key generators and their multiplication relations, which are determined by the intersection of Schubert cells. This visualization is a simplified representation, as the full cohomology ring is more complex and requires a deeper dive into Schubert calculus for complete understanding.
 
 ## Repository Structure
 
